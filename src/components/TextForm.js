@@ -1,5 +1,6 @@
 import React, { useState } from "react";
-export default function TextForm(props) {
+
+const TextForm = (props) => {
 
   const handleOnChange = (event) => {
     setText(event.target.value);
@@ -211,3 +212,5 @@ export default function TextForm(props) {
     </>
   );
 }
+
+export default TextForm;
