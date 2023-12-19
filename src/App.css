@@ -1,0 +1,47 @@
+body {
+  font-family: "Bookman Old Style", Georgia, serif;
+  background: #F6E7DC;
+  background: linear-gradient(45deg, rgba(243, 112, 0, 0.8) 50%, rgba(255, 255, 255) 50%, rgba(121, 35, 0, 0.8) 51%);
+}
+
+html {
+  scroll-behavior: smooth;
+  ::-webkit-scrollbar {
+    width: 5px;
+  }
+  ::-webkit-scrollbar-track {
+    background-color: transparent;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background-color: #333;
+  }
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+@media screen and (max-width: 760px) {
+  body {
+    background: linear-gradient(90deg, rgba(243, 112, 0, 0.8) 20%, rgba(121, 35, 0, 0.8) 80%) !important;
+    background-size: fill;
+    /* background-repeat: no-repeat; */
+  }
+  .mobile {
+    display: flex;
+    flex-direction: column;
+  }
+  .navbar-nav, .form-switch {
+    display: none;
+  }
+  .container-fluid {
+    justify-content: center;
+  }
+  .custom {
+    display: flex !important;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
